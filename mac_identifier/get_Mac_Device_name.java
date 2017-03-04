@@ -34,7 +34,7 @@ class get_Mac_Device_name
 		try
 		{
 			String sCurrentLine;
-			FileInputStream fin_s = new FileInputStream("../tracker_config/nmap");
+			FileInputStream fin_s = new FileInputStream("../tracker_execute/nmap");
 			br = new BufferedReader(new InputStreamReader(fin_s));
 			while((sCurrentLine = br.readLine()) != null)
 			{

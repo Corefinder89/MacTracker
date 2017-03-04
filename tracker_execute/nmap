@@ -1,0 +1,11 @@
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2017-03-04 18:25 IST
+Nmap scan report for 192.168.2.1
+Host is up (0.0039s latency).
+MAC Address: 08:86:3B:BE:8A:F3 (Belkin International)
+Nmap scan report for 192.168.2.4
+Host is up (0.098s latency).
+MAC Address: E4:5D:75:B3:BB:5C (Samsung Electronics)
+Nmap scan report for 192.168.2.6
+Host is up.
+Nmap done: 256 IP addresses (3 hosts up) scanned in 2.42 seconds
