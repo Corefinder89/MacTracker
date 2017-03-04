@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo -s <<EOF
+  DIR=mac_identifier
   echo Connected as ROOT
-  nmap -sP -n 192.168.0.* | tee nmap.txt
-  cd ../mac_identifier
-  echo Connected to mac_identifier
+  /usr/local/bin/nmap -sP -n 192.168.2.* | tee nmap
+  echo "Tranferring nmap data ......"
 EOF
