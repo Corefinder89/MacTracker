@@ -1,5 +1,5 @@
 # Overview
-A simple application that would help an user keep track of the devices connected over a network. It uses the capabilities of a tool called `NMAP` and a very simple logic to deduce the MAC address and the device connected.
+A simple application that would help an user keep track of the devices connected over a network. It uses the capabilities of a tool called `NMAP` and a very simple logic to deduce the MAC address and the device connected over the network.
 
 # Requirements
 1. NMAP installed in the machine.
