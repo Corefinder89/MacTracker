@@ -26,7 +26,7 @@ UNIX and LINUX by default provides a default service called crontab that helps i
 
 # Setting up CRONTAB
 Crontab utility is a program that would run applications or scripts within a system at a certain interval of time. It basically has 4 modes of working which includes:<br>
-1. crontab -e: Suggests editing the current crontab in the system.
-2. crontab -l: Displaying the current version of the crontab.
-3. crontab -u: Specifying the name of the user whose crontab is to be tweaked.
-4. crontab -r: Removes the current crontab for the user.
+1. crontab -e: Suggests editing the current crontab in the system.<br>
+2. crontab -l: Displaying the current version of the crontab.<br>
+3. crontab -u: Specifying the name of the user whose crontab is to be tweaked.<br>
+4. crontab -r: Removes the current crontab for the user.<br>
