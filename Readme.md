@@ -1,3 +1,11 @@
+# Overview
+A simple application that would help an user keep track of the devices connected over a network. It uses the capabilities of a tool called `NMAP` and a very simple logic to deduce the MAC address and the device connected.
+
+# Requirements
+1. NMAP installed in the machine.
+2. JAVA installed in the machine.
+3. CRONTAB.
+
 # NMAP
 <b>NMAP</b> (Network Mapper) is a command that can help users discover hosts and services on a computer network. I have used `NMAP` as a service in my application to identify devices that are connected over the network. To install `NMAP` within your system I would suggest my viewers to install `ZENMAP` which is just a GUI wrapper over the `NMAP` command. It would help harness the capabilities of `NMAP` over a light weight GUI. To get `ZENMAP` installed in your system just follow the [link](https://nmap.org/zenmap/). Since I am using a mac environment to set up my application I just downloaded the required version of Zenmap, extracted it and placed it in my application directory. But before installing the application `NMAP` into your mac please check that your machine has the permission to install applications outside your app store. To do that just visit `System Preferences -> Security -> Click on "Anywhere"` To check whether `NMAP` has properly been installed in your machine just run the command `nmap --version`.
 
@@ -15,3 +23,10 @@ Under the root directory I have another shell executed that basically runs my tw
 # Setting the cron job
 UNIX and LINUX by default provides a default service called crontab that helps in executing services periodically. I have a cron job set that would run this `task_runner` logic every after 30 minutes. Here is the logic for it.<br>
 `*/30 * * * * /Users/soumyajit/Documents/git_repos/target_mac/task_runner.sh > /Users/soumyajit/Documents/git_repos/target_mac/task_runner.log 2>&1`
+
+# Setting up CRONTAB
+Crontab utility is a program that would run applications or scripts within a system at a certain interval of time. It basically has 4 modes of working which includes:<br>
+1. crontab -e: Suggests editing the current crontab in the system.
+2. crontab -l: Displaying the current version of the crontab.
+3. crontab -u: Specifying the name of the user whose crontab is to be tweaked.
+4. crontab -r: Removes the current crontab for the user.
