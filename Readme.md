@@ -22,7 +22,8 @@ Under the root directory I have another shell executed that basically runs my tw
 
 # Setting the cron job
 UNIX and LINUX by default provides a default service called crontab that helps in executing services periodically. I have a cron job set that would run this `task_runner` logic every after 30 minutes. Here is the logic for it.<br>
-`*/30 * * * * /Users/soumyajit/Documents/git_repos/target_mac/task_runner.sh > /Users/soumyajit/Documents/git_repos/target_mac/task_runner.log 2>&1`
+`*/30 * * * * /Users/soumyajit/Documents/git_repos/target_mac/task_runner.sh > /Users/soumyajit/Documents/git_repos/target_mac/task_runner.log 2>&1`<br>
+N.B: I have configured the cron so that I get the redirected output of the terminal into a log file called `task_runner.log`.
 
 # Setting up CRONTAB
 Crontab utility is a program that would run applications or scripts within a system at a certain interval of time. It basically has 4 modes of working which includes:<br>
