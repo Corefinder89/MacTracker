@@ -24,9 +24,9 @@ WORKDIR MacTracker
 WORKDIR tracker_execute
 RUN chmod +x Extractor.sh
 RUN chmod +x run_nmap.sh
-WORKDIR MacTracker
+WORKDIR "/MacTracker"
 RUN chmod +x task_runner.sh
 
-CMD ["/usr/local/bin/task_runner.sh"]
+CMD ["./task_runner.sh"]
 
 ENTRYPOINT ["/bin/bash"]
