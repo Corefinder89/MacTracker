@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sudo -s <<EOF
   DIR=mac_identifier
   echo Connected as ROOT
