@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 DIR=mac_identifier
 cd ..
 if [ ! -d "$DIR" ]
