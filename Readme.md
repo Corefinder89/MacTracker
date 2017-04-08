@@ -14,7 +14,7 @@ In this application I have taken a dump of `NMAP` output in an xml format using 
 The `MAC_IDENTIFIER` directory has a java logic written that would extract the MAC Address and the device name connected over the network. A `BufferedReader` object would contain the required `nmap` dump which can be iterated to get the corresponding mac address of the device connected over the network and the device name as well.
 
 # TRACKER_EXECUTE
-The `TRACKER_EXECUTE` directory has two shell scripts. `run_nmap.sh` would run the `nmap` command and dump the entire log into a file called `nmap`. The JAVA logic written utilises this dump to iterate the MAC address and the device name. Then comes the logic for `Extractor.sh`, it simply traverses to the `MAC_IDENTIFIER` directory, compiles and executes the java class.
+The `TRACKER_EXECUTE` directory has two shell scripts. `run_nmap.sh` would run the `nmap` command and dump the entire log into a file called `nmap`. The JAVA logic written utilises this dump to iterate the MAC address and the device name. Then comes the logic for `Extractor.sh`, it simply traverses to the `MAC_IDENTIFIER` directory, compiles and executes the java class. In the corresponding shell script `run_nmap.sh` I have used the IP address of my network. Please make sure to enter the ip address of your respective network.
 
 Now comes, the interesting part of setting a cron job to automate the entire process.
 
